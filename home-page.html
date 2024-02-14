@@ -1,0 +1,564 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/kutty.min.js"></script>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body >
+  <section class="min-h-screen " x-data="{ sideBar: false }">
+    <nav 
+      class="fixed top-0 left-0 z-20 h-full pb-10 overflow-x-hidden overflow-y-auto transition origin-left transform  w-60 md:translate-x-0 bg-white"
+      :class="{ '-translate-x-full' : !sideBar, 'translate-x-0' : sideBar }" @click.away="sideBar = false"> <a href="/"
+        class="flex items-center px-4 py-5 font-dana"> <img src="https://kutty.netlify.app/brand/kutty-logo.png"
+          alt="Kutty Logo" class="w-20" /> </a>
+      <nav class="text-sm  text-gray-900 text-center" aria-label="Main Navigation">
+         <a
+          class="items-center px-4 py-3  text-gray-900 text-lg font-dana font-bold mb-3 text-center">  <span class="font-dana">فیلترها</span> 
+        </a>
+        
+        <br>
+        <hr>
+        <br>
+        <div class="px-5" >
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg font-dana font-bold mb-3">دسته </h2>
+            <div class="grid lg:grid-cols-2 grid-cols-1  gap-4 ">
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">کفش</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">لباس</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">کیف</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">ورزشی</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="px-5" >
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-xs font-dana  mb-3">جنسیت </h2>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">زنانه</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">مردانه</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">پسرانه</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">دخترانه</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="px-5" >
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-xs font-dana  mb-3">قیمت </h2>
+            <div class="grid lg:grid-cols-1 grid-cols-1 gap-4 ">
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">از
+                  300,000 ت تا 1,000,000 ت</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">از
+                  300,000 ت تا 1,000,000 ت</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">از
+                  300,000 ت تا 1,000,000 ت</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">از
+                  300,000 ت تا 1,000,000 ت</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">از
+                  300,000 ت تا 1,000,000 ت</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="px-5" >
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-xs font-dana  mb-3">برند </h2>
+            <div class="grid grid-cols-2 gap-4 ">
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">آدیداس</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">نایک</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">پلو
+                  رالف</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">پوما</button>
+              </div>
+              <div class="rounded-lg bg-black-200">
+                <button type="button"
+                  class="w-full py-2 text-center text-xs rounded-md  focus:outline-none bg-gray-100 text-gray-600  focus:bg-gray-300 ">سایر</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </nav>
+    </nav>
+    <div class="ml-0 transition md:ml-60">
+      <header class="flex items-center justify-between w-full px-4 h-14"> <button
+          class="block btn btn-light-secondary md:hidden" @click.stop="sideBar = true"> <span
+            class="sr-only">Menu</span> <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd" />
+          </svg> </button>
+        <div class="hidden -ml-3 form-icon md:block w-96"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg> <input class="bg-transparent border-0 form-input font-dana text-right" placeholder="جستجو کالا..." /> </div>
+        <div class="flex items-center"> <a href="#" class="flex text-gray-500"> <svg class="shrink-0 w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+            </svg> </a> <a href="#" class="ml-4 avatar avatar-sm"> <img
+              src="https://business.bing.com/api/v3/search/person/photo?caller=IP&id=8c71b031-ecc0-4378-82fa-dc8cc17c4594"
+              alt="Photo of Praveen Juge" /> </a> </div>
+      </header>
+      <div class="p-4"> <!-- Add content here, remove div below -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  lg:px-20 gap-4 p-2 " dir="rtl">
+          <div class="grid gap-4">
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-10/16/101473849_m4-1697461514.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Nike</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">RI BL Fleece Crew
+                    Siyah Kadın Sweatshirt</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-03/27/101482070_m1.jpg?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Nike</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">RI BL Fleece Crew
+                    Siyah Kadın Sweatshirt</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-10/16/101473849_m4-1697461514.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Nike</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">RI BL Fleece Crew
+                    Siyah Kadın Sweatshirt</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="grid gap-4 shadow-sm">
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-06/09/101327066_f4.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">U.S. Polo Assn.</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">MOZART 3FX Lacivert
+                    Erkek Sneaker</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">1,900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-10/16/101473849_m4-1697461514.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Nike</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">RI BL Fleece Crew
+                    Siyah Kadın Sweatshirt</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-10/16/101473849_m4-1697461514.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Nike</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">RI BL Fleece Crew
+                    Siyah Kadın Sweatshirt</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-06/08/101430169_d4-1686220031.jpeg?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Lotto</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">DONATO 2PR Siyah
+                    Erkek Sneaker</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">4,00,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-10/16/101473849_m4-1697461514.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Lumberjack</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">MILTON 3FX Beyaz
+                    Kadın Sneaker</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-10/16/101473849_m4-1697461514.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Nike</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">RI BL Fleece Crew
+                    Siyah Kadın Sweatshirt</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-04/11/101610303_m2.jpg?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Lumberjack</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">MILTON 3FX Beyaz
+                    Kadın Sneaker</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">300,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-10/16/101473849_m4-1697461514.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Nike</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">RI BL Fleece Crew
+                    Siyah Kadın Sweatshirt</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+            <div class="shadow-md cursor-pointer hover:scale-105 duration-500 ">
+              <div>
+
+                <div
+                  class="flex justify-center w-10 h-10 pt-[.70rem] rounded-full shadow-white  bg-red-600    text-white text-xs px-1 m-5 absolute z-10 font-numbers">
+                  25%</div>
+                <img class="h-auto max-w-full rounded-lg "
+                  src="https://floimages.mncdn.com/mnresize/600/-/media/catalog/product/23-10/16/101473849_m4-1697461514.JPG?w=600"
+                  alt="">
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-1">
+                <div class="col-span-6 text-left font-numbers "><span class="text-xl px-2">Nike</span> </div>
+                <div class="col-span-6 text-left font-numbers "><span class="font-dana text-xs px-2">RI BL Fleece Crew
+                    Siyah Kadın Sweatshirt</span> </div>
+
+              </div>
+              <div class="grid grid-cols-6 gap-x-4 gap-y-5">
+                <div class="col-span-1 py-1 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36" stroke-width="4.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+
+                </div>
+                <div class="col-span-5 text-left text-xl font-numbers ">900,000 <span
+                    class="font-dana text-xs px-2">تومان</span> </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div> <!-- Sidebar Backdrop -->
+    <div class="fixed inset-0 z-10 w-screen h-screen bg-black bg-opacity-25 md:hidden" x-show.transition="sideBar"
+      x-cloak></div>
+  </section>
+
+</body>
+
+</html>
